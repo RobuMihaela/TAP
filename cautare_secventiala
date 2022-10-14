@@ -1,0 +1,18 @@
+list=[]
+numar_el=input("NUmarul de elemente al sirului este:")
+numar_el=int(numar_el)
+for i in range(0, int(numar_el)):
+    el= input("Introdu elemetul")
+    list.append(el)
+    
+    cautare_numar= input("INtrodu numarul pe care vrei sa il cauti")
+    
+    def find_array(list, numar_el):
+        for i in range (0, numar_el):
+            if(list[i]==cautare_numar):
+                print("NUmarul cautat se afla pe pozitia: ", i)
+                break
+            else:
+                print("NUmarul cautat nu se afla in sir")
+    find_array(list, numar_el)
+    print("Lista sortata este: ", list)
