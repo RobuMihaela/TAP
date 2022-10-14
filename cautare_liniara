@@ -1,0 +1,19 @@
+from pickle import FALSE, TRUE
+
+numar_el=int(input("introdu numarul de elemente al sirului "))
+list=[]#declaratie la lista cu numele list
+for i in range(0,numar_el):
+    element=input("Introdu elementul ")
+    list.append(element)
+print (list)
+
+cautare_numar=input("Introdu numarul pe care vrei sa il cauti ")
+list.sort()
+ok =FALSE
+def find_array(element, numar_el):
+    for i in range (0, numar_el):
+        if (list[i]==cautare_numar):
+            print("Numarul cautat se afla pe pozitia: ", i)
+        
+find_array(list, numar_el)
+print("Lista sortata este: ", list)
